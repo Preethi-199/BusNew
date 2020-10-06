@@ -3,7 +3,7 @@
 .hero           {
     min-height: 800px;
     text-align: center;
-    background-image: url('/assets/homepage.png');
+    background-image: url('assets/homepage.png');
     background-size: cover;
     
   }
@@ -19,7 +19,7 @@
   .about-hero           {
     min-height: 500px;
     text-align: center;
-    background-image: url('/assets/modern-bus2.jpg');
+    background-image: url('assets/modern-bus2.jpg');
     background-size: cover;
   }
   .about-hero-content   {
