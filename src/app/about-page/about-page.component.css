@@ -1,7 +1,7 @@
 .hero           {
     min-height: 680px;
     text-align: center;
-    background-image: url('../../assets/sky.jpg');
+    background-image: url('src\assets\images\modern-bus2.jpg');
     background-size: cover;
   }
   .hero-content   {
@@ -16,7 +16,7 @@
   .about-hero           {
     min-height: 500px;
     text-align: center;
-    background-image: url('../../assets/modern-bus2.jpg');
+    background-image: url('src\assets\images\sky.jpg');
     background-size: cover;
   }
   .about-hero-content   {
