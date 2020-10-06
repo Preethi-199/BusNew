@@ -1,23 +1,90 @@
 <body>
-  
-<table>
-  <th>CLICK HERE TO FIND UNAVAILABLE SEATS</th>
-  <tr *ngFor="let c of bookdedSeat">
-  <td>{{c}}</td>
+  <br> <br>
+  <div class="centered" style="margin-top: 10%; border: 2px solid grey; padding: 25px;  width: 400px;">
+  <h4>BUS SEAT LAYOUT</h4><br>
+  <small>*Red:booked seats</small>
+<table class="table table-bordered" style="margin-left: 10%;" cellpadding=10 cellspacing=30 style="width:20%;">
+  <tr>
+  <th>Left Window</th>
+  <th>Left </th>
+  <th>Right Window</th>
+  <th>Right </th>
+</tr>
+  <tr>
+    <td style="background-color: red;">A1</td>
+    <td>A2</td>
+    <td>A3</td>
+    <td>A4</td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>B2</td>
+      <td>B3</td>
+      <td>B4</td>
+    </tr>
+    <tr>
+        <td style="background-color: red;">C1</td>
+        <td style="background-color: red;">C2</td>
+        <td>C3</td>
+        <td>C4</td>
+        </tr>
+        <tr>
+          <td style="background-color: red;">D1</td>
+          <td style="background-color: red;">D2</td>
+          <td>D3</td>
+          <td style="background-color: red;">D4</td>
+          </tr>
+          <tr>
+            <td>E1</td>
+            <td>E2</td>
+            <td>E3</td>
+            <td>E4</td>
+            </tr>
+            <tr>
+              <td>F1</td>
+              <td>F2</td>
+              <td style="background-color: red;">F3</td>
+              <td style="background-color: red;">F4</td>
+              </tr>
+              <tr>
+                <td>G1</td>
+                <td>G2</td>
+                <td>G3</td>
+                <td>G4</td>
+                </tr>
+                <tr>
+                  <td>H1</td>
+                  <td>H2</td>
+                  <td>H3</td>
+                  <td>H4</td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: red;">I1</td>
+                    <td style="background-color: red;">I2</td>
+                    <td>I3</td>
+                    <td>I4</td>
+                    </tr>
 </table>
-<input type="submit" (click)=" findTickets()" value="Occupied Seats"><br><br>
-<h1 id="heading"><u>Please select a seat.</u></h1>
-<div style="margin-left: 40%;">
-  Seat Number for your booking<br><input type="text" name="seatNumber" [(ngModel)]="seatNumber"><br><br>
+<br>
+</div>
+<!-- <label>CLICK HERE TO FIND AVAILABLE SEATS</label><br>
+<input type="submit" (click)=" findTickets()" value="Occupied Seats"> -->
+<div class="container-md" style="margin-top: 50%; border: 2px solid grey; padding: 25px;  width: 600px;">
+  <h1 id="heading"><u>Please select a seat.</u></h1>
+  <br>
+<div style="margin-left: 30%;">
+  Seat Number<br><input type="text" name="seatNumber" [(ngModel)]="seatNumber"><br><br>
   Email<br><input type="text" [(ngModel)]="email"><br><br>
   Phone<br><input type="text" [(ngModel)]="phoneNo"><br><br>
-  
 </div>
-<div id="proceed-button">
-  <button routerLink="/">Cancel</button>
-  <button routerLink="/afterSeatSelect" (click)="makeReservation()" >Proceed</button>
+<div id="proceed-button" style="margin-left: 30%;">
+  <button class ="btn btn-primary" routerLink="/">Cancel</button>
+  <button class ="btn btn-primary"routerLink="/afterSeatSelect" (click)="makeReservation()" >Proceed</button>
 </div>
-
+</div>
+<br>
+<br>
+<br>
 	<!-- Heading-->
 	<!-- <h1 id="heading"><u>Please select a seat.</u></h1> -->
 

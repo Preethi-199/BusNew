@@ -38,6 +38,7 @@ label{
 
 .container{
     border: 5px solid grey;
+    border-radius: 15px;
 }
 
 h4{

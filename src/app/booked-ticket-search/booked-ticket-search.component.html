@@ -6,11 +6,11 @@
       <div class="container">
        <br>
        <br>
-       <h4>Enter Details to search your booked ticket</h4><br><br>
+       <h4>Enter Your Ticket ID</h4><br><br>
       <!-- Ticket Id-->
       <div class="form-group">
         <label>Ticket Id </label> 
-        <input type="text" name="" [(ngModel)]=search.ticketNo formControlName="ticketId"  class="form-control" placeholder="Enter Ticket Id" [class.is-invalid]="TicketId.invalid && TicketId.touched">
+        <input type="text" name="" id="tck" [(ngModel)]=search.ticketNo formControlName="ticketId"  class="form-control" placeholder="Enter Ticket Id" [class.is-invalid]="TicketId.invalid && TicketId.touched">
 
         <div *ngIf="TicketId.invalid && TicketId.touched">
           <small class="text-danger">TicketId not valid.</small>
@@ -31,6 +31,7 @@
   <br>
   <br> <br> <br>
   <div *ngIf="show">
+    <h3>Ticket Details:</h3>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -46,6 +47,36 @@
     </thead>
    <!-- *ngFor="let c of searcha"   *ngFor="let c of searchb" -->
     <tbody>
+      <tr >
+        <td>102</td>
+        <td>Chenai</td>
+        <td>Madurai</td>
+        <td>13:15</td>
+        <td>07:00</td>
+        <td>8</td>
+        <td>D2</td>
+        <td>10-10-2020</td>
+      </tr> 
+      <tr >
+        <td>102</td>
+        <td>Vellore</td>
+        <td>Trichy</td>
+        <td>11:15</td>
+        <td>15:00</td>
+        <td>4</td>
+        <td>J4</td>
+        <td>11-09-2020</td>
+      </tr> 
+      <tr >
+        <td>102</td>
+        <td>Vellore</td>
+        <td>Madurai</td>
+        <td>21:00</td>
+        <td>4:00</td>
+        <td>6</td>
+        <td>K1</td>
+        <td>11-09-2020</td>
+      </tr> 
       <tr >
         <td>{{searchb.ticketNo}}</td>
         <td>{{searchb.source}}</td>

@@ -25,7 +25,7 @@ import { UnauthorizedUserComponent } from './unauthorized-user/unauthorized-user
 import { SeatSelectLayoutComponent } from './seat-select-layout/seat-select-layout.component';
 import { AfterSeatSelectComponent } from './after-seat-select/after-seat-select.component';
 import { PaymentPortalComponent } from './payment-portal/payment-portal.component';
-
+import { ApiService } from 'src/app/service/api.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +56,8 @@ import { PaymentPortalComponent } from './payment-portal/payment-portal.componen
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ApiService],
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }

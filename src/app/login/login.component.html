@@ -1,8 +1,8 @@
-<div class="container-lg">
+<div id="full" class="container-lg">
   <br>
   <br>
   <br> <br> <br>      
-  <form [formGroup]="LoginForm" (ngSubmit)="f.form.valid" #f="ngForm">
+  <form [formGroup]="LoginForm" (ngSubmit)="OnSubmit()" #f="ngForm">
    <!-- {{LoginForm.value|json}} -->
      <div class="container">  
      <br>
@@ -21,7 +21,7 @@
      
      <div class="form-group">
        <label>Password</label>
-       <input type="password" formControlName="password" [(ngModel)]=search.password class="form-control" placeholder="Enter 8 digit Password" [class.is-invalid]="LoginForm.controls.password.invalid && LoginForm.controls.password.touched">
+       <input type="password" formControlName="password" name="pass" [(ngModel)]=search.password class="form-control" placeholder="Enter 8 digit Password" [class.is-invalid]="LoginForm.controls.password.invalid && LoginForm.controls.password.touched">
    
        <div *ngIf="LoginForm.controls.password.invalid && LoginForm.controls.password.touched">
          <small class="text-danger">Password not valid.</small>
@@ -30,7 +30,7 @@
    
     
      <div class="form-group" style="text-align:center">
-       <button class="btn btn-primary" (click)="searchTicket()">Login</button>
+       <button class="btn btn-primary" type="submit">Login</button>
       
        <a href="/forgotPassLink" style="margin-left: 80%;">Forgot Password?</a>
        <a href="/registerLink" style="margin-left: 90%;">New User?</a>
@@ -41,7 +41,7 @@
    <br>
    <br>
    <br> <br> <br>     
-   <h3 style="color: red; text-align:center;">{{infoLogin}}</h3>
+   <!-- <h3 style="color: red; text-align:center;">{{infoLogin}}</h3> -->
  
    </div> 
  

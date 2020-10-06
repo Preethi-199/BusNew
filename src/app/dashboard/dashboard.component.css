@@ -1,12 +1,30 @@
-.header{
+/* .header{
     overflow: hidden;
      background-color: #333;
      color: white;
 }
 .header h1{
     float: left;
+} */
+
+
+.container-fluid{
+        margin-top: 0;
+        border-radius: 0;
+     
 }
-.header button{
+body {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+.container-fluid{
+    background-color: grey;
+}
+
+.nav h2{
+    text-align: center;
+}
+button{
     float: right;
     padding: 1%;
     font-size : 20px;
@@ -63,17 +81,17 @@ form button:hover{
    border-color: blue;
 }
 #box{
-   width:600px;
-   margin: auto;
-   
+   width:100px;
+   margin-top:1px ;
+   border-style: 1px red solid;
    padding: 30px;   
 }
  #box-content{
-   margin: 1%;
-   border-style: solid;
+   margin-left: 15%;
+   margin-right: 15%;
    text-align: center;
    font-size: 20px;
-}
+} 
 form{
    margin-right: 90%;
 }
@@ -95,3 +113,29 @@ label{
 select{
     margin-left: 450%;
 }
+
+h4{
+    text-align: center;
+   
+}
+
+#main.container{
+    margin-left: 1px;
+  
+   
+}
+
+.row{
+    padding: 15px;
+    margin-top: 1px;
+    margin-right: 0rem;
+   
+}
+
+form{
+    margin: auto; 
+    width:600px;
+    padding: 20px;
+    border: 2px solid grey;
+}
+

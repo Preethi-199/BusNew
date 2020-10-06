@@ -38,9 +38,12 @@ label{
     margin-top: 8px;
 } */
 
+#full{
+    background-color: white
+}
 
 body {
-    background-color: #f9f9f9 !important;
+    background-color: grey !important;
     font-family: 'Open Sans', sans-serif!important;
     font-size:11px;
 }
@@ -48,6 +51,7 @@ body {
 
 .container {   
     border: 5px solid grey;
+    border-radius: 15px;
 }
   
 

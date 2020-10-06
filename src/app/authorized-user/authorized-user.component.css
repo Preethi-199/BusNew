@@ -24,6 +24,7 @@ button{
 }
 form{
     margin-right: 90%;
+    padding: 10px 15px;
  }
 
 input:focus{

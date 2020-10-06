@@ -79,8 +79,8 @@
 
     <div *ngIf="!showf" id="continue-login">	
         <div id="continue">
-            <button style="padding-left: 6%; padding-right: 6%;" (click)="searchBus()">Authorized User</button><br>
-            <button (click)="searchBus1()">UnAuthorized User</button>	
+            <button class="btn btn-info" style="padding-left: 6%; padding-right: 6%;" (click)="searchBus()" routerLink="/authorizedUser">Authorized User</button><br>
+            <button class="btn btn-info"(click)="searchBus1()" routerLink="/unauthorizedUser">UnAuthorized User</button>	
         </div>
     </div>
 
@@ -88,7 +88,7 @@
     <div id="search-bus">
         <hr>
         <table  cellpadding=10 cellspacing=30 style="width:100%; ">
-          <tr >
+          <tr>
           <th>Bus Name</th>   
           <th>Source</th> 
           <th>Destination</th> 

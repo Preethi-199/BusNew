@@ -1,22 +1,40 @@
-
+<br>
+<br>
+<br>
+<br><br><br>
 <div id="ticket-details">
     <div id="details">
         <h2>Ticket Details</h2>
-        <div id="print-details">
-            <h3>Bus No :- {{busNumber}}</h3>
-            <h3>Source :- {{source}}</h3>
-            <h3>Destination :- {{destion}}</h3>
+           <div id="print-details">
+            <table style="padding: 50%;">
+                <br>
+            <tr><h3><td>Bus No:-</td> <td>103</td></h3></tr><br>
+            <tr><h3><td>Source:-</td> <td>{{source}}</td></h3></tr><br>
+            <tr><h3><td>Destination:-</td> <td>{{destion}}</td></h3></tr><br>
+            <tr><h3><td>Date of Journey:- </td> <td>{{doj}}</td></h3></tr><br>
+            <!-- <tr><h3><td>Arrival Time:-</td> <td>{{arrivalTime}}</td></h3></tr>
+            <tr><h3><td>Departure Time:-</td> <td>{{departureTime}}</td></h3></tr> -->
+            <tr><h3><td>Seat Number:-</td> <td>{{seatNo}}</td></h3></tr><br>
+            <tr><h3><td>Fare:- </td> <td>1200</td></h3></tr>
+            <br>
+        </table>
+            <!-- <h3>Source :- {{source}}</h3>
+            <h3>Destination :-{{destion}}</h3>
             <h3>Date of Journey :- {{doj}}</h3>
             <h3>Arrival Time :- {{arrivalTime}}</h3>
             <h3>Departure Time :- {{departureTime}}</h3>
             <h3>Seat Number :- {{seatNo}}</h3>
-            <h3>Fare :- {{fare}}</h3>
+            <h3>Fare :- {{fare}}</h3> -->
         </div>	
     </div>
 </div>
-<div id="proceed-button">
+<div id="proceed-button" style="margin-left: -5%;">
     <div id="proceed">
-        <button routerLink="/">Cancel</button>
-        <button routerLink="/paymentPortalLink">Proceed to Payment</button>
+        <button class ="btn btn-primary" routerLink="/">Cancel</button>
+        <button class ="btn btn-primary" routerLink="/paymentPortalLink">Proceed to Payment</button>
     </div>
 </div>
+<br>
+<br>
+<br>
+<br><br><br>
